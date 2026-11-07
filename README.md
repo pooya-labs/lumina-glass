@@ -1,7 +1,8 @@
 # LuminaGlass — Liquid Glass, Optics & Browser Audio Lab
 
 **Author:** Pooya Goodarzi  
-**Live site:** https://pooya16pg-spec.github.io/lumina-glass/
+**Live site:** https://pooya-labs.github.io/lumina-glass/  
+**Repository:** [pooya-labs/lumina-glass](https://github.com/pooya-labs/lumina-glass)
 
 LuminaGlass is a browser-native exploration of spatial glass surfaces and hands-on audio processing.
 
