@@ -21,7 +21,7 @@ export default function EcosystemShowcase() {
         fa: "سیستم‌عامل تحت وب تعاملی با پنجره‌های شناور، ترمینال دستورپذیر و معرفی جامع مهارت‌های مهندسی کامپیوتر.",
         en: "Interactive desktop WebOS featuring draggable windows, terminal CLI, and engineering showcase.",
       },
-      url: "https://pooya16pg-spec.github.io/pooya-os/",
+      url: "https://pooya-labs.github.io/pooya-os/",
       accent: "from-cyan-400 to-blue-500",
     },
     {
@@ -32,7 +32,7 @@ export default function EcosystemShowcase() {
         fa: "داشبورد بازار با چارت SVG، دفتر سفارشات شبیه‌سازی‌شده و معاملات آزمایشی محلی؛ قیمت عمومی بایننس در صورت دسترسی شبکه.",
         en: "Market dashboard with SVG candles, a simulated order book, and local paper trading; public Binance tickers when reachable.",
       },
-      url: "https://pooya16pg-spec.github.io/aurapulse/",
+      url: "https://pooya-labs.github.io/aurapulse/",
       accent: "from-emerald-400 to-teal-500",
     },
     {
@@ -43,7 +43,7 @@ export default function EcosystemShowcase() {
         fa: "استودیوی طراحی معماری میکروسرویس و کلود با قابلیت درگ‌و‌دراپ نودها، شبیه‌سازی بار ترافیک و تولید کد Docker Compose.",
         en: "Cloud system architecture node-graph editor with live traffic simulation and Docker Compose export.",
       },
-      url: "https://pooya16pg-spec.github.io/nexus-canvas/",
+      url: "https://pooya-labs.github.io/nexus-canvas/",
       accent: "from-indigo-400 to-purple-500",
     },
     {
@@ -54,7 +54,7 @@ export default function EcosystemShowcase() {
         fa: "سوپر-اپلیکیشن شیشه مایع (Liquid Glass) با ۳ اتمسفر نوری، سنتز سه‌بعدی، اکولایزر پارامتریک فرکانسی و برد مدیریت پروژه.",
         en: "Apple visionOS-inspired Liquid Glass suite featuring optical caustics, parametric vocal EQ & sprint board.",
       },
-      url: "https://pooya16pg-spec.github.io/lumina-glass/",
+      url: "https://pooya-labs.github.io/lumina-glass/",
       accent: "from-pink-400 to-indigo-500",
     },
   ];
