@@ -5,9 +5,9 @@ import "./globals.css";
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#0B1021" };
 
 export const metadata: Metadata = {
-  title: "LuminaGlass | Pooya Goodarzi — Liquid Glass Spatial AI & Audio Studio",
+  title: "Lumina Glass — Optical & Audio Studio | Pooya Labs",
   description:
-    "Responsive Liquid Glass optical studio, browser-native audio EQ and engineering portfolio by Pooya Goodarzi.",
+    "A browser-native liquid glass optical studio, audio EQ lab and creative engineering workspace by Pooya Labs.",
 };
 
 export default function RootLayout({
@@ -18,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <head>
+        <link rel="icon" href="./lumina-mark.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./lumina-mark.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
