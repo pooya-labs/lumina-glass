@@ -40,17 +40,17 @@ const PROJECTS: Project[] = [
   {
     num: "05", name: "Aetherflow", logo: "./project-marks/aetherflow.svg", category: "Workflow Orchestration · Rust",
     desc: { fa: "پلتفرم ارکستریشن گردش‌کار توزیع‌شده با اجرای پایدار و زمان‌بندی رویدادمحور.", en: "A fault-tolerant distributed workflow engine with durable execution and event-driven scheduling." },
-    repo: "https://github.com/pooya-labs/aetherflow", accent: "from-orange-400 to-rose-500"
+    live: "https://pooya-labs.github.io/aetherflow/", repo: "https://github.com/pooya-labs/aetherflow", accent: "from-orange-400 to-rose-500"
   },
   {
     num: "06", name: "Orbit", logo: "https://raw.githubusercontent.com/pooya-labs/orbit/main/app/icon.svg", category: "Systems Observability",
     desc: { fa: "ابزار مشاهده‌پذیری و هوشمندی برای سامانه‌های توزیع‌شده.", en: "An intelligence and observability workspace for distributed systems." },
-    repo: "https://github.com/pooya-labs/orbit", accent: "from-violet-400 to-fuchsia-500"
+    live: "https://pooya-labs.github.io/orbit/", repo: "https://github.com/pooya-labs/orbit", accent: "from-violet-400 to-fuchsia-500"
   },
   {
-    num: "07", name: "Salon Booking", logo: "https://raw.githubusercontent.com/pooya-labs/salon-booking/main/public/icons/salon-icon.svg", category: "Booking & Operations",
+    num: "07", name: "Salon Booking", logo: "https://raw.githubusercontent.com/pooya-labs/salon-booking/main/public/images/shayan-emblem.webp", category: "Booking & Operations",
     desc: { fa: "سامانه رزرو نوبت و پنل مدیریت سبک برای کسب‌وکارهای خدماتی.", en: "A lightweight appointment booking and management system for service businesses." },
-    repo: "https://github.com/pooya-labs/salon-booking", accent: "from-amber-400 to-orange-500"
+    live: "https://pooya-labs.github.io/salon-booking/", repo: "https://github.com/pooya-labs/salon-booking", accent: "from-amber-400 to-orange-500"
   },
   {
     num: "08", name: "Pooya Labs Platform", logo: "https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp", category: "Personal Product Platform",
@@ -93,7 +93,7 @@ export default function EcosystemShowcase() {
                 <span className="font-mono text-[10px] opacity-65 text-end">{project.category}</span>
               </div>
               <div className="flex items-center gap-3 min-w-0">
-                <div className={`shrink-0 rounded-[15px] flex items-center justify-center ${["AuraPulse", "NexusCanvas", "GlobalCart", "Aetherflow", "Orbit"].includes(project.name) ? "w-16 h-16 p-0 border-0 bg-transparent shadow-none" : `w-12 h-12 border p-1.5 shadow-sm ${project.name === "Pooya Labs Platform" ? "bg-black border-white/15" : "border-slate-300/25 bg-white/80"}`}`}>
+                <div className={`shrink-0 w-16 h-16 rounded-[15px] flex items-center justify-center ${["AuraPulse", "NexusCanvas", "GlobalCart", "Aetherflow", "Orbit", "Salon Booking"].includes(project.name) ? "p-0 border-0 bg-transparent shadow-none" : `border p-1.5 shadow-sm ${project.name === "Pooya Labs Platform" ? "bg-black border-white/15" : "border-slate-300/25 bg-white/80"}`}`}>
                   <img src={project.logo} alt={`${project.name} logo`} loading="lazy" decoding="async" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-lg font-black min-w-0">{project.name}</h3>
