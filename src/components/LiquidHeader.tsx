@@ -11,7 +11,6 @@ import {
   AudioWaveform,
   CheckSquare,
   Compass,
-  Droplets,
   Globe,
   Sparkles,
   Sun,
@@ -101,7 +100,7 @@ export default function LiquidHeader() {
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0 max-w-full">
             <div className="btn-liquid-primary flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs shrink-0">
-              <Droplets className="w-3.5 h-3.5 shrink-0" />
+              <img src="./lumina-mark.svg" alt="" width="20" height="20" className="w-5 h-5 shrink-0" />
               <span className="font-mono font-black tracking-wide text-xs sm:text-sm">
                 LuminaGlass
               </span>
