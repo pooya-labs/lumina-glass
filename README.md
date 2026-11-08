@@ -1,29 +1,53 @@
-# LuminaGlass — Liquid Glass, Optics & Browser Audio Lab
+# Lumina Glass
 
-**Author:** Pooya Goodarzi  
-**Live site:** https://pooya-labs.github.io/lumina-glass/  
-**Repository:** [pooya-labs/lumina-glass](https://github.com/pooya-labs/lumina-glass)
+**A liquid-glass optical studio, browser audio lab and creative workspace.**
 
-LuminaGlass is a browser-native exploration of spatial glass surfaces and hands-on audio processing.
+- **Live site:** https://pooya-labs.github.io/lumina-glass/
+- **Repository:** https://github.com/pooya-labs/lumina-glass
+- **Maintainer:** [Pooya Goodarzi](https://github.com/pooya-labs)
 
-## Optical studio
-- Tune iridescence, fluidity, and crystal-layer complexity with a live SVG preview.
-- Export the current optical state as a real PNG rendered with Canvas.
-- Name and save optical presets, restore them later, or delete presets you no longer need.
-- Presets and optical preferences persist in this browser's localStorage. The descriptive text field is preset metadata; it does not call an AI image-generation service.
+## What’s inside
 
-## Audio lab
-- Five Biquad filters process the built-in oscillator synth, a selected local audio file, or microphone input.
-- Start from Flat, Warm, Clarity, or Cinematic EQ profiles, then tune each band manually.
-- AudioContext is resumed from the user's playback action.
-- Stopping or switching sources releases oscillator nodes, microphone tracks, AudioContext resources, and temporary file object URLs.
-- EQ settings are saved locally; audio playback itself never resumes automatically after a reload.
-- Microphone access requires browser permission and a secure context (HTTPS or localhost).
+- **Liquid Optical Studio** — tune optical parameters, preview the result, and save or export presets.
+- **Web Audio EQ** — a five-band browser-native equalizer for the built-in tone, local audio files, and microphone input.
+- **Sprint Workflow** — a compact local task board with persistent browser storage.
+- **Project Ecosystem** — a current directory of Pooya Labs projects, live demos, and source repositories.
 
-## Studio workflow
-- Maintain a three-stage local task board (Backlog, In Progress, Completed).
-- Add tasks, advance their status, and remove them.
-- Task state is saved in this browser; it is not a cloud project-management service.
+## Project ecosystem
 
-## Stack and deployment
-Next.js 16 static export, React 19, TypeScript, Tailwind CSS, SVG/Canvas, Web Audio API, and localStorage. Hosted on GitHub Pages with no remote audio processing, server-side AI generation, account system, or cloud preset database.
+| Project | Website | Source |
+| --- | --- | --- |
+| Pooya.OS | [Open](https://pooya-labs.github.io/pooya-os/) | [GitHub](https://github.com/pooya-labs/pooya-os) |
+| AuraPulse | [Open](https://pooya-labs.github.io/aurapulse/) | [GitHub](https://github.com/pooya-labs/aurapulse) |
+| NexusCanvas | [Open](https://pooya-labs.github.io/nexus-canvas/) | [GitHub](https://github.com/pooya-labs/nexus-canvas) |
+| GlobalCart | [Open](https://pooya-labs.github.io/globalcart/) | [GitHub](https://github.com/pooya-labs/globalcart) |
+| Aetherflow | — | [GitHub](https://github.com/pooya-labs/aetherflow) |
+| Orbit | — | [GitHub](https://github.com/pooya-labs/orbit) |
+| Salon Booking | — | [GitHub](https://github.com/pooya-labs/salon-booking) |
+| Pooya Labs Platform | [Open](https://pooya-labs.github.io/pooya-labs-platform/) | [GitHub](https://github.com/pooya-labs/pooya-labs-platform) |
+
+## Local-first behavior
+
+Optical presets, EQ settings, and task-board data are stored in the current browser. They are not synchronized to a remote account or database. Audio is processed through the browser’s Web Audio API; microphone use requires permission and a secure context (HTTPS or localhost). Playback does not restart automatically after a reload.
+
+## Stack
+
+Next.js, React, TypeScript, Tailwind CSS, SVG/Canvas, Web Audio API, and localStorage.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+Create a production build with:
+
+```bash
+npm run build
+```
+
+## Links
+
+- [GitHub profile](https://github.com/pooya-labs)
+- [Pooya Labs Platform](https://pooya-labs.github.io/pooya-labs-platform/)
