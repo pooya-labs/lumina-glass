@@ -55,6 +55,16 @@ npm run build
 
 ---
 
+## Latest project update — 8 November 2026
+
+The visual identity was refined with a new refractive-glass cube mark and orbital ring. The ecosystem hub now uses the current Pooya Labs Platform monogram with improved contrast; selected project marks were enlarged, unnecessary white tiles were removed, and footer link capsules were aligned. The audio, optical and task-board features remain browser-local.
+
+## Project ownership
+
+<p align="center"><a href="https://pooya-labs.github.io/pooya-labs-platform/"><img src="https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp" alt="Pooya Labs Platform monogram" width="64" /></a></p>
+
+**Owned and maintained by [Pooya Labs Platform](https://pooya-labs.github.io/pooya-labs-platform/).** Project direction and engineering: **Pooya Goodarzi**.
+
 ## راهنمای فارسی
 
 ### معرفی
@@ -90,3 +100,13 @@ npm run build
 Next.js، React، TypeScript، Tailwind CSS، SVG/Canvas، Web Audio API و localStorage.
 
 برای مشاهدهٔ سایر پروژه‌های مجموعه، به جدول «Project ecosystem» در بخش انگلیسی README مراجعه کنید.
+
+### آخرین تغییرات — ۸ نوامبر ۲۰۲۶
+
+هویت بصری Lumina Glass با نشان تازهٔ مکعب شیشه‌ایِ شکست‌دهندهٔ نور و حلقهٔ مداری بازطراحی شد. در هاب اکوسیستم، مونوگرام فعلی پویا لبز با کنتراست بهتر قرار گرفت؛ نشان تعدادی از پروژه‌ها بزرگ‌تر شد، پس‌زمینه‌های سفید غیرضروری حذف شدند و ارتفاع کپسول‌های لینک فوتر یکسان شد. قابلیت‌های صوتی، اپتیکال و برد کار همچنان در مرورگر کاربر اجرا و ذخیره می‌شوند.
+
+### مالکیت و نگه‌داری
+
+<p align="center"><a href="https://pooya-labs.github.io/pooya-labs-platform/"><img src="https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp" alt="نشان مونوگرام پویا لبز" width="64" /></a></p>
+
+**مالک و نگه‌دارنده: [پلتفرم پویا لبز](https://pooya-labs.github.io/pooya-labs-platform/)** · طراحی و توسعه: **پویا گودرزی**.
