@@ -7,7 +7,7 @@ import AiSynthesisStudio from "../components/AiSynthesisStudio";
 import AcousticEqLab from "../components/AcousticEqLab";
 import LiquidTaskBoard from "../components/LiquidTaskBoard";
 import EcosystemShowcase from "../components/EcosystemShowcase";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 function SiteFooter({ lang }: { lang: "fa" | "en" }) {
   const isFa = lang === "fa";
@@ -23,7 +23,7 @@ function SiteFooter({ lang }: { lang: "fa" | "en" }) {
         </div>
         <nav aria-label={isFa ? "پیوندهای رسمی" : "Official links"} className="flex flex-wrap items-center justify-center gap-2">
           <a href="https://github.com/pooya-labs" target="_blank" rel="noreferrer" className="btn-liquid-dark rounded-full px-4 py-2.5 text-xs font-bold inline-flex items-center gap-2 hover:-translate-y-0.5">
-            <Github size={16} aria-hidden="true" /> GitHub
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.24-5.1 5.51.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg> GitHub
           </a>
           <a href="https://pooya-labs.github.io/pooya-labs-platform/" target="_blank" rel="noreferrer" className="btn-liquid-dark rounded-full px-4 py-2.5 text-xs font-bold inline-flex items-center gap-2 hover:-translate-y-0.5">
             <svg viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" className="shrink-0"><defs><linearGradient id="pl-mark" x1="2" y1="2" x2="30" y2="30"><stop stopColor="#67E8F9"/><stop offset="1" stopColor="#A78BFA"/></linearGradient></defs><path d="M16 2.5 29.5 10v12L16 29.5 2.5 22V10L16 2.5Z" fill="none" stroke="url(#pl-mark)" strokeWidth="1.8"/><path d="M11 23V9h7.2a4.2 4.2 0 0 1 0 8.4H11" fill="none" stroke="url(#pl-mark)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
