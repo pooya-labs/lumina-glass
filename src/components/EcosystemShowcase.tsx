@@ -8,6 +8,7 @@ import { ExternalLink } from "lucide-react";
 type Project = {
   num: string;
   name: string;
+  logo: string;
   category: string;
   desc: { fa: string; en: string };
   live?: string;
@@ -17,44 +18,49 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    num: "01", name: "Pooya.OS", category: "Spatial WebOS",
+    num: "01", name: "Pooya.OS", logo: "https://raw.githubusercontent.com/pooya-labs/pooya-os/main/public/brand/pooya-os.svg", category: "Spatial WebOS",
     desc: { fa: "محیط دسکتاپ تحت وب با پنجره‌های تعاملی، ترمینال و تجربه‌ای شبیه سیستم‌عامل.", en: "A spatial browser desktop with interactive windows, a command terminal and an OS-like workflow." },
     live: "https://pooya-labs.github.io/pooya-os/", repo: "https://github.com/pooya-labs/pooya-os", accent: "from-cyan-400 to-blue-500"
   },
   {
-    num: "02", name: "AuraPulse", category: "Market Intelligence",
+    num: "02", name: "AuraPulse", logo: "https://raw.githubusercontent.com/pooya-labs/aurapulse/main/public/aurapulse-mark.svg", category: "Market Intelligence",
     desc: { fa: "ترمینال بازار با نمودارهای زنده، دفتر سفارش شبیه‌سازی‌شده و معاملات آزمایشی.", en: "A market terminal with live charts, a simulated order book and local paper trading." },
     live: "https://pooya-labs.github.io/aurapulse/", repo: "https://github.com/pooya-labs/aurapulse", accent: "from-emerald-400 to-teal-500"
   },
   {
-    num: "03", name: "NexusCanvas", category: "Cloud Architecture Studio",
+    num: "03", name: "NexusCanvas", logo: "https://raw.githubusercontent.com/pooya-labs/nexus-canvas/main/public/nexus-canvas-mark.svg", category: "Cloud Architecture Studio",
     desc: { fa: "محیط بصری طراحی معماری سیستم‌های ابری و سرویس‌های توزیع‌شده.", en: "A visual workspace for cloud architecture and distributed service design." },
     live: "https://pooya-labs.github.io/nexus-canvas/", repo: "https://github.com/pooya-labs/nexus-canvas", accent: "from-indigo-400 to-purple-500"
   },
   {
-    num: "04", name: "GlobalCart", category: "Commerce Experience",
+    num: "04", name: "GlobalCart", logo: "https://raw.githubusercontent.com/pooya-labs/globalcart/main/app/icon.svg", category: "Commerce Experience",
     desc: { fa: "دموی فروشگاه بین‌المللی با کاتالوگ چنددسته‌ای و تجربه خرید واکنش‌گرا.", en: "A responsive international marketplace demo with a multi-category product catalogue." },
     live: "https://pooya-labs.github.io/globalcart/", repo: "https://github.com/pooya-labs/globalcart", accent: "from-lime-400 to-emerald-600"
   },
   {
-    num: "05", name: "Aetherflow", category: "Workflow Orchestration · Rust",
+    num: "05", name: "Aetherflow", logo: "./project-marks/aetherflow.svg", category: "Workflow Orchestration · Rust",
     desc: { fa: "پلتفرم ارکستریشن گردش‌کار توزیع‌شده با اجرای پایدار و زمان‌بندی رویدادمحور.", en: "A fault-tolerant distributed workflow engine with durable execution and event-driven scheduling." },
     repo: "https://github.com/pooya-labs/aetherflow", accent: "from-orange-400 to-rose-500"
   },
   {
-    num: "06", name: "Orbit", category: "Systems Observability",
+    num: "06", name: "Orbit", logo: "https://raw.githubusercontent.com/pooya-labs/orbit/main/app/icon.svg", category: "Systems Observability",
     desc: { fa: "ابزار مشاهده‌پذیری و هوشمندی برای سامانه‌های توزیع‌شده.", en: "An intelligence and observability workspace for distributed systems." },
     repo: "https://github.com/pooya-labs/orbit", accent: "from-violet-400 to-fuchsia-500"
   },
   {
-    num: "07", name: "Salon Booking", category: "Booking & Operations",
+    num: "07", name: "Salon Booking", logo: "https://raw.githubusercontent.com/pooya-labs/salon-booking/main/public/icons/salon-icon.svg", category: "Booking & Operations",
     desc: { fa: "سامانه رزرو نوبت و پنل مدیریت سبک برای کسب‌وکارهای خدماتی.", en: "A lightweight appointment booking and management system for service businesses." },
     repo: "https://github.com/pooya-labs/salon-booking", accent: "from-amber-400 to-orange-500"
   },
   {
-    num: "08", name: "Pooya Labs Platform", category: "Personal Product Platform",
+    num: "08", name: "Pooya Labs Platform", logo: "https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-mark.svg", category: "Personal Product Platform",
     desc: { fa: "درگاه رسمی پروژه‌ها، محصولات و تجربه‌های مهندسی پویا لبز.", en: "The official home for Pooya Labs projects, products and engineering work." },
     live: "https://pooya-labs.github.io/pooya-labs-platform/", repo: "https://github.com/pooya-labs/pooya-labs-platform", accent: "from-sky-400 to-violet-500"
+  },
+  {
+    num: "09", name: "Lumina Glass", logo: "./lumina-mark.svg", category: "Creative Engineering Studio",
+    desc: { fa: "استودیوی شیشه مایع، ابزارهای اپتیکی و آزمایشگاه صدای دیجیتال.", en: "A liquid-glass studio for optical tools, creative experiments and browser-native audio." },
+    live: "https://pooya-labs.github.io/lumina-glass/", repo: "https://github.com/pooya-labs/lumina-glass", accent: "from-sky-300 to-fuchsia-500"
   },
 ];
 
@@ -86,7 +92,12 @@ export default function EcosystemShowcase() {
                 <span className={`font-mono text-[10px] font-black px-3 py-1 rounded-full text-white bg-gradient-to-r ${project.accent}`}>PROJECT / {project.num}</span>
                 <span className="font-mono text-[10px] opacity-65 text-end">{project.category}</span>
               </div>
-              <h3 className="text-lg font-black">{project.name}</h3>
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="w-12 h-12 shrink-0 rounded-[15px] border border-slate-300/25 bg-white/80 p-1.5 shadow-sm flex items-center justify-center">
+                  <img src={project.logo} alt={`${project.name} logo`} loading="lazy" decoding="async" className="w-full h-full object-contain" />
+                </div>
+                <h3 className="text-lg font-black min-w-0">{project.name}</h3>
+              </div>
               <p className="text-xs opacity-80 leading-relaxed min-h-[42px]">{project.desc[lang]}</p>
             </div>
             <div className="flex flex-wrap items-center gap-2 pt-1">
