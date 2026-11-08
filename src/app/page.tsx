@@ -15,7 +15,7 @@ function SiteFooter({ lang }: { lang: "fa" | "en" }) {
     <footer className="relative z-10 w-full max-w-[1680px] mx-auto px-3 sm:px-4 lg:px-8 pt-3 pb-5">
       <div className="liquid-shell-dark rounded-[24px] px-5 py-5 sm:px-7 flex flex-col sm:flex-row items-center justify-between gap-5">
         <div className="flex items-center gap-3 min-w-0">
-          <img src="/lumina-mark.svg" alt="Lumina Glass" width="42" height="42" className="w-[42px] h-[42px] shrink-0" />
+          <img src="./lumina-mark.svg" alt="Lumina Glass" width="42" height="42" className="w-[42px] h-[42px] shrink-0" />
           <div className="min-w-0">
             <div className="font-mono font-black tracking-[.16em] text-sm">LUMINA GLASS</div>
             <p className="text-[11px] opacity-65 mt-1">{isFa ? "آزمایشگاه اپتیک، شیشه مایع و صدای دیجیتال" : "Optics, liquid glass & digital audio lab"}</p>
@@ -26,7 +26,7 @@ function SiteFooter({ lang }: { lang: "fa" | "en" }) {
             <Github size={16} aria-hidden="true" /> GitHub
           </a>
           <a href="https://pooya-labs.github.io/pooya-labs-platform/" target="_blank" rel="noreferrer" className="btn-liquid-dark rounded-full px-4 py-2.5 text-xs font-bold inline-flex items-center gap-2 hover:-translate-y-0.5">
-            <img src="https://pooya-labs.github.io/pooya-labs-platform/assets/brand-mark.svg" alt="" width="18" height="18" className="w-[18px] h-[18px] object-contain" onError={(event) => { event.currentTarget.style.display = "none"; }} />
+            <svg viewBox="0 0 32 32" width="18" height="18" aria-hidden="true" className="shrink-0"><defs><linearGradient id="pl-mark" x1="2" y1="2" x2="30" y2="30"><stop stopColor="#67E8F9"/><stop offset="1" stopColor="#A78BFA"/></linearGradient></defs><path d="M16 2.5 29.5 10v12L16 29.5 2.5 22V10L16 2.5Z" fill="none" stroke="url(#pl-mark)" strokeWidth="1.8"/><path d="M11 23V9h7.2a4.2 4.2 0 0 1 0 8.4H11" fill="none" stroke="url(#pl-mark)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Pooya Labs Platform <ExternalLink size={13} aria-hidden="true" />
           </a>
         </nav>
