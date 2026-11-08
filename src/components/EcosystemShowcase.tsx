@@ -93,7 +93,7 @@ export default function EcosystemShowcase() {
                 <span className="font-mono text-[10px] opacity-65 text-end">{project.category}</span>
               </div>
               <div className="flex items-center gap-3 min-w-0">
-                <div className="w-12 h-12 shrink-0 rounded-[15px] border border-slate-300/25 bg-white/80 p-1.5 shadow-sm flex items-center justify-center">
+                <div className={`w-12 h-12 shrink-0 rounded-[15px] border p-1.5 shadow-sm flex items-center justify-center ${project.name === "Pooya Labs Platform" ? "bg-black border-white/15" : "border-slate-300/25 bg-white/80"}`}>
                   <img src={project.logo} alt={`${project.name} logo`} loading="lazy" decoding="async" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-lg font-black min-w-0">{project.name}</h3>
@@ -102,7 +102,7 @@ export default function EcosystemShowcase() {
             </div>
             <div className="flex flex-wrap items-center gap-2 pt-1">
               {project.live && <a href={project.live} target="_blank" rel="noreferrer" className="btn-liquid-primary rounded-full px-3.5 py-2.5 text-xs font-bold inline-flex items-center gap-2"><span>{isFa ? "مشاهده سایت" : "Visit Website"}</span><ExternalLink size={14} /></a>}
-              <a href={project.repo} target="_blank" rel="noreferrer" className={`rounded-full px-3.5 py-2.5 text-xs font-bold inline-flex items-center gap-2 ${project.live ? btnClass : "btn-liquid-primary"}`}><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.24-5.1 5.51.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg><span>{isFa ? "مخزن گیت‌هاب" : "Source"}</span></a>
+              <a href={project.repo} target="_blank" rel="noreferrer" className={`rounded-full px-3.5 py-2.5 text-xs font-bold inline-flex items-center gap-2 ${project.live ? btnClass : "btn-liquid-primary"}`}><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-.28-2.48-1.24-5.09-1.24-5.09 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.24-5.1 5.51.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg><span>{isFa ? "مخزن گیت‌هاب" : "Source"}</span></a>
             </div>
           </article>
         ))}
