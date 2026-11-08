@@ -79,8 +79,8 @@ export default function LiquidHeader() {
     },
     {
       id: "ECOSYSTEM",
-      fa: "هاب ۴ پروژه (پویا)",
-      en: "4-Project Hub",
+      fa: "هاب پروژه‌های پویا",
+      en: "Project Ecosystem",
       icon: Compass,
     },
   ];
