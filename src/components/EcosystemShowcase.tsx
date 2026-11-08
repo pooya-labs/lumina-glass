@@ -53,7 +53,7 @@ const PROJECTS: Project[] = [
     repo: "https://github.com/pooya-labs/salon-booking", accent: "from-amber-400 to-orange-500"
   },
   {
-    num: "08", name: "Pooya Labs Platform", logo: "https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-mark.svg", category: "Personal Product Platform",
+    num: "08", name: "Pooya Labs Platform", logo: "https://raw.githubusercontent.com/pooya-labs/pooya-labs-platform/main/apps/platform/public/brand/pooya-monogram.webp", category: "Personal Product Platform",
     desc: { fa: "درگاه رسمی پروژه‌ها، محصولات و تجربه‌های مهندسی پویا لبز.", en: "The official home for Pooya Labs projects, products and engineering work." },
     live: "https://pooya-labs.github.io/pooya-labs-platform/", repo: "https://github.com/pooya-labs/pooya-labs-platform", accent: "from-sky-400 to-violet-500"
   },
