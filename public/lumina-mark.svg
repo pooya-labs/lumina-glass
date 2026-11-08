@@ -1,17 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Lumina Glass</title>
   <defs>
-    <linearGradient id="glass" x1="18" y1="12" x2="111" y2="116" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F7FCFF"/><stop offset=".32" stop-color="#9DEBFF"/><stop offset=".68" stop-color="#A78BFA"/><stop offset="1" stop-color="#F0A6D8"/>
+    <linearGradient id="glassTop" x1="31" y1="17" x2="101" y2="69" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8FFF7" stop-opacity=".95"/>
+      <stop offset=".42" stop-color="#56DDFB" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#9B8CFF" stop-opacity=".86"/>
     </linearGradient>
-    <linearGradient id="edge" x1="27" y1="24" x2="99" y2="106" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#8BE9FF" stop-opacity=".22"/>
+    <linearGradient id="glassSide" x1="85" y1="49" x2="94" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57E7FF" stop-opacity=".78"/>
+      <stop offset=".55" stop-color="#527CFF" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#D9B8FF" stop-opacity=".88"/>
     </linearGradient>
+    <linearGradient id="glassFront" x1="25" y1="45" x2="66" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6FFFC" stop-opacity=".78"/>
+      <stop offset=".45" stop-color="#42CFF4" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#A98BFF" stop-opacity=".72"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="9" y1="87" x2="119" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D58BFF"/>
+      <stop offset=".42" stop-color="#62F3F0"/>
+      <stop offset=".78" stop-color="#4BD9FF"/>
+      <stop offset="1" stop-color="#C7A8FF"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="27" y1="18" x2="100" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3FFFF"/>
+      <stop offset=".48" stop-color="#71E9FF"/>
+      <stop offset="1" stop-color="#B7A4FF"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <path d="M64 9 109 35v58l-45 26L19 93V35L64 9Z" fill="#0B1021" fill-opacity=".82" stroke="url(#edge)" stroke-width="2.5"/>
-  <path d="m64 20 34 20v44l-34 20-34-20V40l34-20Z" fill="url(#glass)" fill-opacity=".12" stroke="url(#glass)" stroke-width="2"/>
-  <path d="m64 20 0 84M30 40l34 20 34-20M30 84l34-24 34 24" stroke="url(#glass)" stroke-width="2.2" stroke-linejoin="round"/>
-  <path d="m64 20 34 20-34 20-34-20 34-20Z" fill="url(#glass)" fill-opacity=".26"/>
-  <path d="m64 60 34 24-34 20-34-20 34-24Z" fill="url(#glass)" fill-opacity=".13"/>
-  <path d="m64 20 0 40" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-  <circle cx="64" cy="60" r="3.5" fill="#fff"/>
+
+  <!-- Soft, luminous glass body -->
+  <g filter="url(#glow)">
+    <path d="M64 13 105 36 64 59 23 36 64 13Z" fill="url(#glassTop)" fill-opacity=".46" stroke="url(#edge)" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M23 36 64 59v54L23 89V36Z" fill="url(#glassFront)" fill-opacity=".68" stroke="url(#edge)" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M105 36 64 59v54l41-24V36Z" fill="url(#glassSide)" fill-opacity=".7" stroke="url(#edge)" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="m64 13 0 46M23 36l41 23 41-23M64 59v54" stroke="#E8FFFF" stroke-opacity=".82" stroke-width="1.7" stroke-linecap="round"/>
+    <path d="m31 41 26 15v39L31 80V41Z" fill="#D8FFFF" fill-opacity=".1"/>
+    <path d="m97 42-26 15v39l26-15V42Z" fill="#A8B8FF" fill-opacity=".12"/>
+  </g>
+
+  <!-- Orbital glass ribbon -->
+  <path d="M12 83C25 107 83 108 111 72 126 52 112 34 94 35" stroke="url(#orbit)" stroke-width="3.2" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M14 82C28 58 58 43 87 44" stroke="url(#orbit)" stroke-opacity=".72" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="111" cy="71" r="6.2" fill="#C6F9FF" stroke="#75E8FF" stroke-width="1.8"/>
+  <circle cx="111" cy="71" r="10" fill="#65DFFF" fill-opacity=".12"/>
+  <path d="M33 104 64 122l31-18" stroke="url(#orbit)" stroke-opacity=".34" stroke-width="1.2" stroke-linecap="round"/>
 </svg>
