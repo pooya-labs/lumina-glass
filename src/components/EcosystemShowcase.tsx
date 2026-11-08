@@ -93,7 +93,7 @@ export default function EcosystemShowcase() {
                 <span className="font-mono text-[10px] opacity-65 text-end">{project.category}</span>
               </div>
               <div className="flex items-center gap-3 min-w-0">
-                <div className={`w-12 h-12 shrink-0 rounded-[15px] border p-1.5 shadow-sm flex items-center justify-center ${project.name === "Pooya Labs Platform" ? "bg-black border-white/15" : "border-slate-300/25 bg-white/80"}`}>
+                <div className={`shrink-0 rounded-[15px] flex items-center justify-center ${["AuraPulse", "NexusCanvas", "GlobalCart", "Aetherflow", "Orbit"].includes(project.name) ? "w-16 h-16 p-0 border-0 bg-transparent shadow-none" : `w-12 h-12 border p-1.5 shadow-sm ${project.name === "Pooya Labs Platform" ? "bg-black border-white/15" : "border-slate-300/25 bg-white/80"}`}`}>
                   <img src={project.logo} alt={`${project.name} logo`} loading="lazy" decoding="async" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-lg font-black min-w-0">{project.name}</h3>
